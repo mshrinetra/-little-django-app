@@ -102,3 +102,13 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Editor configurations
+.vscode
+
+# App keys and secret
+secret/
+
+# Temp dev files
+apache.txt
+django.pdf

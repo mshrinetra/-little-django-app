@@ -1,0 +1,19 @@
+h2, h3, h4, button, input, li{
+    margin: 5px 15px;
+    padding: 5px 15px;
+}
+
+
+li a{
+    color: darkblue;
+    text-decoration: none;
+}
+
+li a:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+    background-color: dodgerblue;
+}
+.error_msg{
+    color: #dd0000
+}
