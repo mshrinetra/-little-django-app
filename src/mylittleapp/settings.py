@@ -43,6 +43,8 @@ INSTALLED_APPS = [
 
     # Created apps
     'polls.apps.PollsConfig',
+    'story.apps.StoryConfig',
+    'accounts.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [

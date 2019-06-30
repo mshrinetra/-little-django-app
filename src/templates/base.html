@@ -1,0 +1,20 @@
+<h1>My Little Django Web App</h1>
+{% if user.is_authenticated %}
+<h5>Logged in as {{ user.get_username }}</h5>
+{% else %}
+<h5>Not logged in</h5>
+{% endif %}
+<h3>Site links</h3>
+<h4><a href="/">Home</a></h4>
+<h4>Polls</h4>
+<a href="{% url 'polls:index' %}">Polls Index</a>
+<h4>Story</h4>
+<a href="{% url 'story:index' %}">Story Index</a>
+<h4>Accounts</h4>
+<a href="{% url 'accounts:signin' %}">Signin</a>
+<a href="{% url 'accounts:signup' %}">Signup</a>
+<a href="{% url 'accounts:signout' %}">Signout</a>
+
+{% block content %}
+
+{% endblock content %}

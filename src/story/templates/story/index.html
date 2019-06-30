@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'story/style.css' %}">
+<h2>Stories</h2>
+{% if stories %}
+{% for story in stories %}
+<div class="story-card">
+    <h4>{{ story.title }}</h4>
+    {% if story.story_img %}
+    <img src="/media/{{ story.story_img }}" alt="Media Image" height="250px">
+    {% endif %}
+    <p>{{ story.content  }}</p>
+    <br>
+    <a href="{% url 'story:detail' story.id %}">View</a>
+</div>
+{% endfor %}
+{% else %}
+<h4>Sory no story to display</h4>
+{% endif %}
+{% endblock content %}

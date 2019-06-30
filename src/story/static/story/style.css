@@ -1,0 +1,7 @@
+.story-card{
+    margin: 15px;
+    padding: 15px;
+    background-color: whitesmoke;
+    border: 2px  rgb(112, 98, 98);
+    border-radius: 5px;
+}
